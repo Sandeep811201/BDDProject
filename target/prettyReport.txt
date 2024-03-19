@@ -1,0 +1,7 @@
+
+@SauceDemo
+Scenario: Open Sauce Demo UI page and verify login # src/test/resources/Features/SauceDemoLogin.feature:4
+  Given when Sauce Demo Page                       # stepDefinitions.SauceDemoLoginStepDefinition.when_sauce_demo_page()
+  When Enter username and password                 # stepDefinitions.SauceDemoLoginStepDefinition.enter_username_and_password()
+  And click on login button                        # stepDefinitions.SauceDemoLoginStepDefinition.click_on_login_button()
+  Then home page should display                    # stepDefinitions.SauceDemoLoginStepDefinition.home_page_should_display()
